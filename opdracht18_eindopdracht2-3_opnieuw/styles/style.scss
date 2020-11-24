@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #c3cfe2;
+}
+
+.social {
+  list-style: none;
+  display: inline-block;
+
+  &__btn {
+    display: inline-block;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    color: whitesmoke;
+    transition: width 200ms;
+
+    &:hover {
+      width: 400px;
+    }
+
+    &::before {
+      display: inline-block;
+      font-family: "Font Awesome 5 Brands";
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      padding: 20px 40px 20px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &--blog {
+      background-color: #e17b77;
+      position: absolute;
+      top: 300px;
+      right: 0px;
+
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f109";
+      }
+    }
+
+    &--twitter {
+      background-color: #00aced;
+      position: absolute;
+      top: 370px;
+      right: 0px;
+
+      &::before {
+        content: "\f099";
+      }
+    }
+
+    &--linkedin {
+      background-color: #007bb6;
+      position: absolute;
+      top: 440px;
+      right: 0px;
+
+      &::before {
+        content: "\f0e1";
+      }
+    }
+
+    &--facebook {
+      position: absolute;
+      top: 510px;
+      right: 0px;
+      background-color: #3b5998;
+
+      &::before {
+        content: "\f39e";
+      }
+    }
+
+    &--github {
+      position: absolute;
+      top: 580px;
+      right: 0px;
+      background-color: #333;
+
+      &::before {
+        content: "\f09b";
+      }
+    }
+  }
+}
